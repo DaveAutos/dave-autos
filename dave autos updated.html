@@ -1,156 +1,206 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <title>Dave Autos | Luxury Cars</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Dave Autos | Luxury & Premium Vehicles</title>
 
-  <style>
-    body {
-      margin: 0;
-      font-family: "Segoe UI", Arial, sans-serif;
-      background: linear-gradient(180deg, #020617, #0f172a);
-      color: #e5e7eb;
-    }
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
 
-    header {
-      padding: 40px 20px;
-      text-align: center;
-      background: radial-gradient(circle at top, #111827, #020617);
-      border-bottom: 1px solid #1f2933;
-    }
+<style>
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
 
-    header h1 {
-      margin: 0;
-      font-size: 40px;
-      letter-spacing: 2px;
-    }
+body{
+    font-family:'Poppins',sans-serif;
+    background:#0f172a;
+    color:#fff;
+}
 
-    header p {
-      margin-top: 10px;
-      font-size: 14px;
-      color: #9ca3af;
-    }
+header{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    padding:20px 8%;
+    background:#0b1220;
+    border-bottom:1px solid rgba(255,255,255,0.05);
+}
 
-    .container {
-      max-width: 1000px;
-      margin: auto;
-      padding: 40px 20px;
-    }
+header h1{
+    font-size:22px;
+    font-weight:700;
+    letter-spacing:1px;
+}
 
-    .card {
-      background: rgba(17, 24, 39, 0.9);
-      padding: 30px;
-      border-radius: 16px;
-      margin-bottom: 30px;
-      box-shadow: 0 20px 40px rgba(0,0,0,0.4);
-    }
+nav a{
+    text-decoration:none;
+    color:#ccc;
+    margin-left:25px;
+    font-size:14px;
+    transition:0.3s;
+}
 
-    h2 {
-      margin-top: 0;
-      color: #facc15;
-      letter-spacing: 1px;
-    }
+nav a:hover{
+    color:#00d4ff;
+}
 
-    p {
-      line-height: 1.7;
-      color: #d1d5db;
-    }
+.hero{
+    height:85vh;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    text-align:center;
+    padding:0 10%;
+    background:linear-gradient(rgba(0,0,0,0.6),rgba(0,0,0,0.6)),
+    url('https://images.unsplash.com/photo-1503376780353-7e6692767b70?auto=format&fit=crop&w=1600&q=80');
+    background-size:cover;
+    background-position:center;
+}
 
-    ul {
-      padding-left: 20px;
-    }
+.hero h2{
+    font-size:48px;
+    font-weight:700;
+    margin-bottom:15px;
+}
 
-    ul li {
-      margin-bottom: 10px;
-    }
+.hero p{
+    font-size:18px;
+    color:#ddd;
+    max-width:700px;
+    margin:auto;
+}
 
-    .contact {
-      text-align: center;
-    }
+.btn{
+    display:inline-block;
+    margin-top:30px;
+    padding:12px 28px;
+    background:#00d4ff;
+    color:#000;
+    font-weight:600;
+    border-radius:30px;
+    text-decoration:none;
+    transition:0.3s;
+}
 
-    .btn {
-      display: inline-block;
-      margin-top: 20px;
-      padding: 14px 35px;
-      background: linear-gradient(135deg, #facc15, #eab308);
-      color: #020617;
-      text-decoration: none;
-      border-radius: 30px;
-      font-weight: bold;
-      letter-spacing: 1px;
-      transition: transform 0.2s ease, box-shadow 0.2s ease;
-    }
+.btn:hover{
+    background:#00a8cc;
+}
 
-    .btn:hover {
-      transform: translateY(-2px);
-      box-shadow: 0 10px 25px rgba(250, 204, 21, 0.4);
-    }
+.section{
+    padding:80px 8%;
+    text-align:center;
+}
 
-    footer {
-      text-align: center;
-      padding: 25px;
-      font-size: 13px;
-      color: #9ca3af;
-      border-top: 1px solid #1f2933;
-    }
+.section h3{
+    font-size:30px;
+    margin-bottom:40px;
+}
 
-    a {
-      color: #facc15;
-      text-decoration: none;
-    }
-  </style>
+.features{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+    gap:30px;
+}
+
+.feature-box{
+    background:#111827;
+    padding:30px;
+    border-radius:10px;
+    transition:0.3s;
+    border:1px solid rgba(255,255,255,0.05);
+}
+
+.feature-box:hover{
+    transform:translateY(-5px);
+    border-color:#00d4ff;
+}
+
+.contact-card{
+    background:#111827;
+    padding:40px;
+    border-radius:12px;
+    max-width:600px;
+    margin:auto;
+}
+
+.contact-card p{
+    margin-bottom:15px;
+    font-size:15px;
+}
+
+footer{
+    background:#0b1220;
+    padding:25px;
+    text-align:center;
+    font-size:14px;
+    color:#aaa;
+    margin-top:60px;
+}
+</style>
 </head>
 
 <body>
 
-  <header>
-    <h1>DAVE AUTOS</h1>
-    <p>Luxury • Performance • Trust</p>
-  </header>
+<header>
+    <h1>Dave Autos</h1>
+    <nav>
+        <a href="#about">About</a>
+        <a href="#contact">Contact</a>
+    </nav>
+</header>
 
-  <div class="container">
-
-    <div class="card">
-      <h2>About Dave Autos</h2>
-      <p>
-        Dave Autos is a premium automobile dealership focused on luxury and
-        foreign-used vehicles. We prioritize quality, transparency, and
-        customer satisfaction in every deal.
-      </p>
-    </div>
-
-    <div class="card">
-      <h2>Our Services</h2>
-      <ul>
-        <li>Luxury & Foreign Used Vehicles</li>
-        <li>Direct Import & Sourcing</li>
-        <li>Custom Duty Assistance</li>
-        <li>Trusted & Transparent Deals</li>
-      </ul>
-    </div>
-
-    <div class="card contact">
-      <h2>Contact Dave Autos</h2>
-      <p>📞 <strong>09122570648</strong></p>
-      <p>📍 Postal Code: <strong>482109</strong></p>
-      <p>
-        📸 Instagram:
-        <a href="https://www.instagram.com/dave_autos.ltd/" target="_blank">
-  Instagram: @dave_autos.ltd
-</a>
-          @daves__automobile
+<section class="hero">
+    <div>
+        <h2>Luxury. Performance. Prestige.</h2>
+        <p>Premium foreign and locally used vehicles available in Abuja. 
+        Verified, duty paid, untampered systems — executive smooth drive guaranteed.</p>
+        <a href="https://instagram.com/dave_autos.Ltd" target="_blank" class="btn">
+            View Our Inventory on Instagram
         </a>
-      </p>
-
-      <a class="btn" href="tel:09122570648">Call Dave Autos</a>
     </div>
+</section>
 
-  </div>
+<section id="about" class="section">
+    <h3>Why Choose Dave Autos</h3>
+    <div class="features">
+        <div class="feature-box">
+            <h4>Premium Selection</h4>
+            <p>Carefully selected luxury vehicles with verified history and clean condition.</p>
+        </div>
+        <div class="feature-box">
+            <h4>Transparent Deals</h4>
+            <p>Trusted transactions with no hidden issues and professional documentation.</p>
+        </div>
+        <div class="feature-box">
+            <h4>Duty Paid Vehicles</h4>
+            <p>All imports fully cleared with proper customs documentation.</p>
+        </div>
+        <div class="feature-box">
+            <h4>Executive Experience</h4>
+            <p>Smooth performance, premium sound systems, and untouched factory integrity.</p>
+        </div>
+    </div>
+</section>
 
-  <footer>
-    © 2025 Dave Autos — Premium Cars Only
-  </footer>
+<section id="contact" class="section">
+    <h3>Contact Dave Autos</h3>
+    <div class="contact-card">
+        <p><strong>Phone:</strong> 09122570648</p>
+        <p><strong>Location:</strong> Abuja, Nigeria</p>
+      <p><strong>Instagram:</strong> 
+            <a href="https://instagram.com/dave_autos.Ltd" target="_blank" style="color:#00d4ff;">
+            @dave_autos.Ltd</a>
+        </p>
+        <a href="tel:09122570648" class="btn">Call Now</a>
+    </div>
+</section>
+
+<footer>
+    © 2026 Dave Autos — Premium Cars Only
+</footer>
 
 </body>
-
 </html>
