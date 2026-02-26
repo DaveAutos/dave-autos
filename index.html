@@ -13,16 +13,24 @@
     padding:0;
     box-sizing:border-box;
 }
-
-body{
-    font-family:'Poppins',sans-serif;
-    background-image:url("logo.png");
-    backgriund-size: 60%
-    background-position: center;
-    background-repeat: no-repeat;
-    color:#ffffff;
+body {
+  margin: 0;
+  font-family: 'Poppins', sans-serif;
+  background-color: #0a0f1c;
+  background-image: url('logo.png'); /* make sure the file name matches */
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 60%;
+  background-attachment: fixed;
 }
 
+body::before {
+  content: "";
+  position: fixed;
+  inset: 0;
+  background: rgba(10, 15, 28, 0.9); /* dark overlay */
+  z-index: -1;
+}
 header{
     display:flex;
     justify-content:space-between;
@@ -205,5 +213,6 @@ footer{
 
 </body>
 </html>
+
 
 
