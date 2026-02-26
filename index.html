@@ -54,14 +54,15 @@ nav a:hover{
     justify-content:center;
     text-align:center;
     padding:0 10%;
-    background:linear-gradient(rgba(0,0,0,0.6),rgba(0,0,0,0.6)),
-    url('https://images.unsplash.com/photo-1503376780353-7e6692767b70?auto=format&fit=crop&w=1600&q=80');
-    background-size:cover;
+    background:linear-gradient(rgba(0,0,0,0.7),rgba(0,0,0,0.7)),
+    url('C95F925E-681F-44D5-A020-2424A0C05C37.png');
+    background-size:contain;
+    background-repeat:no-repeat;
     background-position:center;
 }
 
 .hero h2{
-    font-size:48px;
+    font-size:46px;
     font-weight:700;
     margin-bottom:15px;
 }
@@ -75,7 +76,7 @@ nav a:hover{
 
 .btn{
     display:inline-block;
-    margin-top:30px;
+    margin-top:25px;
     padding:12px 28px;
     background:#00d4ff;
     color:#000;
@@ -89,14 +90,28 @@ nav a:hover{
     background:#00a8cc;
 }
 
+.social-icons{
+    margin-top:30px;
+}
+
+.social-icons a{
+    margin:0 10px;
+    display:inline-block;
+    transition:0.3s;
+}
+
+.social-icons img{
+    width:40px;
+    height:40px;
+}
+
+.social-icons a:hover{
+    transform:scale(1.15);
+}
+
 .section{
     padding:80px 8%;
     text-align:center;
-}
-
-.section h3{
-    font-size:30px;
-    margin-bottom:40px;
 }
 
 .features{
@@ -118,19 +133,6 @@ nav a:hover{
     border-color:#00d4ff;
 }
 
-.contact-card{
-    background:#111827;
-    padding:40px;
-    border-radius:12px;
-    max-width:600px;
-    margin:auto;
-}
-
-.contact-card p{
-    margin-bottom:15px;
-    font-size:15px;
-}
-
 footer{
     background:#0b1220;
     padding:25px;
@@ -148,7 +150,6 @@ footer{
     <h1>Dave Autos</h1>
     <nav>
         <a href="#about">About</a>
-        <a href="#contact">Contact</a>
     </nav>
 </header>
 
@@ -156,50 +157,47 @@ footer{
     <div>
         <h2>Luxury. Performance. Prestige.</h2>
         <p>Premium foreign and locally used vehicles available in Abuja. 
-        Verified, duty paid, untampered systems — executive smooth drive guaranteed.</p>
-        <a href="https://instagram.com/dave_autos.Ltd" target="_blank" class="btn">
-            View Our Inventory on Instagram
-        </a>
+        Verified, duty paid, executive smooth drive guaranteed.</p>
+
+        <div class="social-icons">
+            <!-- WhatsApp -->
+            <a href="https://wa.me/2349122570648" target="_blank">
+                <img src="https://cdn-icons-png.flaticon.com/512/733/733585.png" alt="WhatsApp">
+            </a>
+
+            <!-- Instagram -->
+            <a href="https://instagram.com/dave_autos.Ltd" target="_blank">
+                <img src="https://cdn-icons-png.flaticon.com/512/733/733558.png" alt="Instagram">
+            </a>
+
+            <!-- TikTok -->
+            <a href="https://www.tiktok.com/@dave_automobile" target="_blank">
+                <img src="https://cdn-icons-png.flaticon.com/512/3046/3046121.png" alt="TikTok">
+            </a>
+        </div>
     </div>
 </section>
 
 <section id="about" class="section">
-    <h3>Why Choose Dave Autos</h3>
+    <h2>Why Choose Dave Autos</h2>
     <div class="features">
         <div class="feature-box">
             <h4>Premium Selection</h4>
-            <p>Carefully selected luxury vehicles with verified history and clean condition.</p>
+            <p>Carefully selected luxury vehicles with verified history.</p>
         </div>
         <div class="feature-box">
             <h4>Transparent Deals</h4>
-            <p>Trusted transactions with no hidden issues and professional documentation.</p>
-        </div>
-        <div class="feature-box">
-            <h4>Duty Paid Vehicles</h4>
-            <p>All imports fully cleared with proper customs documentation.</p>
+            <p>No hidden costs. Honest pricing. Clean documentation.</p>
         </div>
         <div class="feature-box">
             <h4>Executive Experience</h4>
-            <p>Smooth performance, premium sound systems, and untouched factory integrity.</p>
+            <p>Untampered systems. Premium sound. Smooth drive.</p>
         </div>
-    </div>
-</section>
-
-<section id="contact" class="section">
-    <h3>Contact Dave Autos</h3>
-    <div class="contact-card">
-        <p><strong>Phone:</strong> 09122570648</p>
-        <p><strong>Location:</strong> Abuja, Nigeria</p>
-      <p><strong>Instagram:</strong> 
-            <a href="https://instagram.com/dave_autos.Ltd" target="_blank" style="color:#00d4ff;">
-            @dave_autos.Ltd</a>
-        </p>
-        <a href="tel:09122570648" class="btn">Call Now</a>
     </div>
 </section>
 
 <footer>
-    © 2026 Dave Autos — Premium Cars Only
+© 2026 Dave Autos — Premium Cars Only
 </footer>
 
 </body>
